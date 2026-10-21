@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://e8huiyrls75i"]
+
+[ext_resource type="PackedScene" uid="uid://gbooawqmi6n3" path="res://sphere.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c8bd1yqdvf0k8" path="res://floor.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cfq83kmannh7t" path="res://can.tscn" id="3_h2yge"]
+
+[node name="Main" type="Node3D" unique_id=598488231]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=200714214]
+transform = Transform3D(1, 0, 0, 0, -0.0009935498, 0.9999995, 0, -0.9999995, -0.0009935498, 321.57242, 296.85574, -456.97214)
+
+[node name="Sphere" parent="." unique_id=711430615 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.83433837, 18.732693, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1122053735]
+transform = Transform3D(0.994795, 0.04588046, -0.09098315, 0, 0.89289546, 0.45026416, 0.10189676, -0.44792053, 0.8882479, -10.651753, 18.321209, 8.772221)
+far = 113.46
+
+[node name="floor2" parent="." unique_id=1692350820 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(13.951644, 0.006095959, 0, -0.08451582, 1.0063081, 0, 0, 0, 15.8748045, -16.67717, 4.5679398, -0.033863664)
+
+[node name="floor" parent="." unique_id=1778862137 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(12.625926, -0.2105588, 0, 3.2247581, 0.8244028, 0, 0, 0, 15.615473, -3.7172508, 6.121525, -0.033553243)
+
+[node name="firstRamp" type="Node3D" parent="." unique_id=236654675]
+
+[node name="floor" parent="firstRamp" unique_id=540810045 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(-2.8141494, 0.09965636, 0, -2.6507282, -0.1058003, 0, 0, 0, 1, 0, 15.987455, 0)
+
+[node name="floor3" parent="firstRamp" unique_id=1504383838 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(-1.5434266, 0.04640739, 0, -0.37071925, -0.1932092, 0, 0, 0, 1, -2.116697, 14.525847, 0)
+
+[node name="Dominoes" type="Node3D" parent="." unique_id=346995892]
+
+[node name="Domino4" parent="Dominoes" unique_id=1263390048 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.988477, 5.8471775, -0.4980363)
+
+[node name="Domino7" parent="Dominoes" unique_id=523015312 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.612526, 5.873885, -0.563728)
+
+[node name="Domino8" parent="Dominoes" unique_id=237408326 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.56634, 5.8814535, -0.5927061)
+
+[node name="Domino9" parent="Dominoes" unique_id=2019029464 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.599728, 5.898759, -0.6377773)
+
+[node name="Domino10" parent="Dominoes" unique_id=504200302 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.653168, 5.836672, -0.53048086)
+
+[node name="Domino11" parent="Dominoes" unique_id=205231081 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.60698, 5.84424, -0.55945885)
+
+[node name="Domino12" parent="Dominoes" unique_id=636687780 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.64037, 5.8615456, -0.6045302)
+
+[node name="Domino5" parent="Dominoes" unique_id=1446178437 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.94229, 5.854746, -0.5270144)
+
+[node name="Domino6" parent="Dominoes" unique_id=743797764 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.975678, 5.8720512, -0.5720856)
+
+[node name="Domino" parent="Dominoes" unique_id=517757614 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.029118, 5.809964, -0.46478915)
+
+[node name="Domino3" parent="Dominoes" unique_id=1349010960 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.98293, 5.8175325, -0.49376717)
+
+[node name="Domino2" parent="Dominoes" unique_id=1012964088 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.016319, 5.834838, -0.5388385)
+
+[node name="floor3" parent="." unique_id=628450725 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(27.711992, 0, 0, 0, 46.238403, 0, 0, 0, 1.0156745, -9.905006, 6.2892904, -8.261478)
+
+[node name="floor4" parent="." unique_id=225408167 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(-0.06395397, 0, 1.3163719, 0, 46.382813, 0, -16.55943, 0, -0.005083936, -24.166086, 5.874664, -0.39741373)
+
+[node name="floor5" parent="." unique_id=323170895 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(1, 0, 0, 0, 13.713713, 0, 0, 0, 15.886685, 2.4886355, 14.602459, -0.21429539)
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1751487765]
+transform = Transform3D(27.711992, 0, 0, 0, 46.238403, 0, 0, 0, 1.0156745, -9.870763, 14.908982, -7.7207737)
+text = "¿Puedes derribar
+ todos los dominos?
+🤯"
+font_size = 18

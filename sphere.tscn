@@ -9,6 +9,7 @@ albedo_color = Color(0.7176471, 0.03137255, 0.023529412, 1)
 material = SubResource("StandardMaterial3D_ktem7")
 
 [node name="Sphere" type="RigidBody3D" unique_id=711430615]
+gravity_scale = 2.373
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1849972006]
 shape = SubResource("SphereShape3D_ktem7")
